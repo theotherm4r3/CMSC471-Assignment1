@@ -9,7 +9,6 @@ var parseDate = d3.timeParse("%Y%m%d");
 function init(){
     d3.csv("./data/weather.csv", function(d){
         return {  
-        // Besides converting the types, we also simpilify the variable names here. 
         station: d.station,
         state: d.state,
         latitude: +d.latitude,
